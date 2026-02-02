@@ -58,3 +58,43 @@ sections.forEach(section => {
     section.style.transition = 'all 0.6s ease-out';
     observer.observe(section);
 });
+
+// Contact Form Modal Logic
+const contactForm = document.getElementById('contact-form');
+const successModal = document.getElementById('success-modal');
+const closeModal = document.getElementById('close-modal');
+const hiddenIframe = document.getElementById('hidden_iframe');
+
+let submitted = false;
+
+if (contactForm) {
+    contactForm.addEventListener('submit', () => {
+        // Set flag to true when user actually submits
+        submitted = true;
+    });
+}
+
+if (hiddenIframe) {
+    hiddenIframe.addEventListener('load', () => {
+        if (submitted) {
+            successModal.classList.add('active');
+            if (contactForm) contactForm.reset();
+            submitted = false;
+        }
+    });
+}
+
+if (closeModal) {
+    closeModal.addEventListener('click', () => {
+        successModal.classList.remove('active');
+    });
+}
+
+// Close when clicking outside content
+if (successModal) {
+    successModal.addEventListener('click', (e) => {
+        if (e.target === successModal) {
+            successModal.classList.remove('active');
+        }
+    });
+}

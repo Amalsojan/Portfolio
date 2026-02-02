@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amal Sojan | Software Engineer & AI Specialist</title>
-    <meta name="description" content="Portfolio of Amal Sojan, a Software Engineer specializing in Backend Development, E-commerce, and Artificial Intelligence.">
+    <meta name="description"
+        content="Portfolio of Amal Sojan, a Software Engineer specializing in Backend Development, E-commerce, and Artificial Intelligence.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
@@ -71,12 +75,16 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p>
-                            I am a <strong>Software Engineer</strong> at <strong>Experion Technologies</strong> with a passion for data and logic. 
-                            My career began with <strong>React</strong>, but my curiosity for system architecture quickly led me to the backend realm.
+                            I am a <strong>Software Engineer</strong> at <strong>Experion Technologies</strong> with a
+                            passion for data and logic.
+                            My career began with <strong>React</strong>, but my curiosity for system architecture
+                            quickly led me to the backend realm.
                         </p>
                         <p>
-                            Over the last <strong>3.5 years</strong>, I've honed my skills in optimizing e-commerce platforms using <strong>Adobe Commerce</strong> and 
-                            <strong>BigCommerce</strong>. Currently, I am expanding my horizons into <strong>Machine Learning</strong> and <strong>Data Engineering</strong>, 
+                            Over the last <strong>3.5 years</strong>, I've honed my skills in optimizing e-commerce
+                            platforms using <strong>Adobe Commerce</strong> and
+                            <strong>BigCommerce</strong>. Currently, I am expanding my horizons into <strong>Machine
+                                Learning</strong> and <strong>Data Engineering</strong>,
                             actively practicing with <strong>Databricks</strong> and modern AI tools.
                         </p>
                         <div class="stats-grid">
@@ -156,7 +164,8 @@
                         <div class="project-content">
                             <span class="project-tag">E-Commerce</span>
                             <h3>Enterprise Platform Migration</h3>
-                            <p>Led the backend transition for a high-traffic retail client to BigCommerce. Optimized API integrations reducing load times by 40%.</p>
+                            <p>Led the backend transition for a high-traffic retail client to BigCommerce. Optimized API
+                                integrations reducing load times by 40%.</p>
                             <div class="project-tech">
                                 <span>BigCommerce</span>
                                 <span>Python</span>
@@ -169,7 +178,8 @@
                         <div class="project-content">
                             <span class="project-tag">AI / Data</span>
                             <h3>Predictive Customer Analytics</h3>
-                            <p>Experimental project using Databricks to analyze user behavior patterns and predict purchasing trends with machine learning models.</p>
+                            <p>Experimental project using Databricks to analyze user behavior patterns and predict
+                                purchasing trends with machine learning models.</p>
                             <div class="project-tech">
                                 <span>Databricks</span>
                                 <span>Python</span>
@@ -182,7 +192,8 @@
                         <div class="project-content">
                             <span class="project-tag">Web App</span>
                             <h3>Custom Inventory Manager</h3>
-                            <p>A Django-based inventory management system custom-tailored for B2B needs, featuring real-time stock tracking and reporting.</p>
+                            <p>A Django-based inventory management system custom-tailored for B2B needs, featuring
+                                real-time stock tracking and reporting.</p>
                             <div class="project-tech">
                                 <span>Django</span>
                                 <span>PostgreSQL</span>
@@ -227,7 +238,8 @@
                 <div class="contact-wrapper">
                     <div class="contact-info">
                         <h2 class="contact-title">Let's work together.</h2>
-                        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of
+                            your visions.</p>
                         <div class="contact-details">
                             <a href="mailto:amal.sojan@example.com" class="contact-link">
                                 <i class="fas fa-envelope"></i> amal.sojan@example.com
@@ -240,15 +252,17 @@
                             </a>
                         </div>
                     </div>
-                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Demo)');">
+                    <form class="contact-form"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSe1SckMMpPx7FL87-prnYBJPzApmOWiM5fLkkXFBu4PXhC-AA/formResponse"
+                        method="POST" target="hidden_iframe" id="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" name="entry.1487128460" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" name="entry.2127353548" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Message" rows="5" required></textarea>
+                            <textarea name="entry.1407198564" placeholder="Message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Send Message</button>
                     </form>
@@ -259,6 +273,21 @@
             </div>
         </section>
     </main>
+
+    <!-- Hidden Iframe for Google Form Submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle modal-icon"></i>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you shortly.</p>
+            <button class="btn-primary" id="close-modal">Close</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
